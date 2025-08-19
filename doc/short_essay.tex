@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm,textwidth=17cm,textheight=23cm]{geometry}
+\usepackage{xeCJK}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{booktabs}
+\usepackage{tikz}
+\newcommand{\monthname}[1]{%
+\ifcase#1\or Jan.\or Feb.\or Mar.\or Apr.\or May.\or Jun.\or Jul.\or Aug.\or Sep.\or Oct.\or Nov.\or Dec.\fi}
+\renewcommand{\today}{\number\day~\monthname{\month}~\number\year}
+\setCJKmainfont{標楷體-繁}
+\setmainfont{Times New Roman}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyhead[L]{Grading criteria for essay problems}
+\fancyhead[R]{\today}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\title{Grading criteria for essay problems}
+\author{Tom T. Hsiao}
+\date{\today}
+\begin{document}
+\setstretch{1.5}
+\thispagestyle{fancy}
+\begin{center}
+\fontsize{16pt}{16pt}\selectfont Grading criteria for essay problems
+\end{center}
+\fontsize{14pt}{14pt}\selectfont
+The purpose of essay questions is to assess students abilities in comprehension, analysis, application, and writing with respect to the given topic. Through the essay format can observe students understanding, assimilation, and application of course content, as well as their capacity to clearly express their arguments or viewpoints. This serves as a basis for evaluating their learning outcomes. \\
+\\ \vspace{0.5em}
+\begin{tabular}{|c|p{15cm}|}
+\hline
+Criteria & Description \\
+\hline
+28 - 30 & The essay demonstrates a comprehensive understanding of the topic, with clear and logical organization. Arguments are well-supported with relevant examples. \\
+\hline
+24 - 27 & The essay shows a good understanding of the topic, organized in a logical manner. Arguments are fully supported with relevant examples. \\
+\hline
+20 - 23 & The essay provides a satisfactory understanding of the topic. Arguments are generally supported with relevant examples. \\
+\hline
+16 - 19 & The essay demonstrates a basic understanding of the topic. Arguments are supported with relevant examples. \\
+\hline
+12 - 15 & The essay demonstrates a limited understanding of the topic. Arguments are somewhat supported without examples. \\
+\hline
+8 - 11 & The essay demonstrates a minimal understanding of the topic. Arguments are barely supported. \\
+\hline
+4 - 7 & The essay demonstrates a rare understanding of the topic. Arguments are unsupported. \\
+\hline
+0 - 3 & The essay demonstrates no understanding of the topic. Arguments are irrelevant. \\
+\hline
+\end{tabular}
+\end{document}
