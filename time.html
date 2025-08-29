@@ -29,37 +29,28 @@
      text-align: left;
      list-style-position: inside;
     }
-    #date {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
     #time {
      font-size: 52px;
     }
 </style>
 <script>
 function updateTime() {
-const now = new Date();
-const dateOptions = {day: 'numeric', month: 'long' , year: 'numeric', weekday: 'long'};
-const date = now.toLocaleDateString('en', dateOptions);
-const time = now.toLocaleTimeString('en', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-document.getElementById('date').textContent = date;
-document.getElementById('time').textContent = time;
+    const now = new Date();
+    time = now.toLocaleTimeString('en', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    document.getElementById('time').textContent = time;
 }
 setInterval(updateTime, 1000);
 window.onload = updateTime;
 </script>
-<link rel="icon" type="image/x-icon" href="favPS.ico">
+<link rel="icon" type="image/x-icon" href="favCP.ico">
 </head>
 <body>
-<div id="date"></div>
 <div id="time"></div>
 <br>
 <ol>
-<li>考試時間為下午一時至下午四時。</li>
-<li>桌面上僅放教科書一本或 A4 紙一張與文具用品。</li>
-<li>考試結束時，將試卷繳回並於簽到單上簽名。</li>
-<li>考試順利&nbsp;!</li>
+<li>Time: 13:10 to 15:00.</li>
+<li>Only place textbooks or sheets of A4 paper and stationery on the desk.</li>
+<li>Return the exam paper and sign the attendance sheet at the end of the exam.</li>
 </ol>
 </body>
 </html>
